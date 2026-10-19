@@ -302,7 +302,6 @@ npx serve .
 <div align="center">
   <sub>Сделано с ❤️ и болью от Git merge conflicts.</sub>
 </div>
-```
 
 ---
 
