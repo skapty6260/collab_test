@@ -1,0 +1,28 @@
+/* =========================================================
+   ivan.css — персональные стили профиля Ивана
+   Акцент: красный (Dire) — Carry, агрессивный стиль
+   ========================================================= */
+
+body {
+    --accent: #e5534b;
+    --accent-soft: rgba(229, 83, 75, 0.12);
+}
+
+/* Персональная деталь — тонкая красная линия под именем */
+.profile__name::after {
+    content: "";
+    display: block;
+    width: 64px;
+    height: 3px;
+    margin-top: 0.85rem;
+    background: linear-gradient(90deg, var(--accent), transparent);
+    border-radius: 2px;
+}
+
+/* Позиция 1 (Carry) — золотая плашка с лёгким свечением */
+.profile__pos {
+    background: linear-gradient(180deg, #e8c24a, #b88a1a);
+    color: #14181f;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 14px -2px rgba(201, 162, 39, 0.7);
+}
