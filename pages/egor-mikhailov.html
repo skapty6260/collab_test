@@ -1,0 +1,269 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Егор Михайлов — Mid игрок команды TEAM FIVE по Dota 2. Профиль, статистика, пул героев."
+        />
+        <title>Егор Михайлов — TEAM FIVE · Dota 2</title>
+        <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="../styles/profile.css" />
+        <link rel="stylesheet" href="../styles/players/egor.css" />
+    </head>
+    <body>
+        <!-- Верхняя HUD-полоса -->
+        <div class="topbar">
+            <div class="topbar__left">
+                <span class="topbar__status"></span>
+                <span class="topbar__label">PLAYER PROFILE</span>
+            </div>
+            <div class="topbar__right">
+                <span class="topbar__patch">PATCH 7.37</span>
+                <span class="topbar__divider"></span>
+                <a href="../index.html" class="topbar__back">← К составу</a>
+            </div>
+        </div>
+
+        <!-- Хедер -->
+        <header class="header">
+            <a href="../index.html" class="header__logo">
+                <span class="header__mark">
+                    <svg
+                        viewBox="0 0 24 24"
+                        width="26"
+                        height="26"
+                        fill="none"
+                        aria-hidden="true"
+                    >
+                        <path
+                            d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z"
+                            stroke="currentColor"
+                            stroke-width="1.6"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M12 7 L16.5 9.5 V14.5 L12 17 L7.5 14.5 V9.5 Z"
+                            fill="currentColor"
+                            opacity=".55"
+                        />
+                    </svg>
+                </span>
+                <span class="header__title">TEAM<em>FIVE</em></span>
+            </a>
+
+            <nav class="header__nav" aria-label="Навигация по профилю">
+                <a href="#overview" class="header__link header__link--active"
+                    >Обзор</a
+                >
+            </nav>
+
+            <button
+                class="theme-btn"
+                id="themeBtn"
+                type="button"
+                aria-label="Сменить тему"
+            >
+                <span class="theme-btn__icon" id="themeIcon">🌙</span>
+            </button>
+        </header>
+
+        <main>
+            <!-- ===== Профиль-хедер ===== -->
+            <section class="profile" id="overview">
+                <div class="profile__bg" aria-hidden="true"></div>
+
+                <div class="profile__inner">
+                    <!-- Левая колонка -->
+                    <aside class="profile__side">
+                        <div class="profile__avatar-wrap">
+                            <img
+                                class="profile__avatar"
+                                src="../img/team/egor.png"
+                                alt="Егор Михайлов"
+                                width="220"
+                                height="220"
+                            />
+                            <span class="profile__pos" title="Позиция 2 — Mid"
+                                >2</span
+                            >
+                            <span class="profile__online" title="В сети"></span>
+                        </div>
+
+                        <div class="profile__rank">
+                            <span class="profile__rank-label">RANK</span>
+                            <span class="profile__rank-value">Immortal</span>
+                            <span class="profile__rank-mmr">8 760 MMR</span>
+                        </div>
+
+                        <ul class="profile__social">
+                            <li>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener"
+                                    aria-label="Steam"
+                                >
+                                    <svg
+                                        viewBox="0 0 24 24"
+                                        width="18"
+                                        height="18"
+                                        fill="currentColor"
+                                    >
+                                        <path
+                                            d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm4.6 5.4a2.4 2.4 0 1 1 0 4.8 2.4 2.4 0 0 1 0-4.8ZM8.2 15.3l2.1.9a1.9 1.9 0 1 1-2.1-.9Zm3.8-2.9a3.6 3.6 0 1 1 0-7.2 3.6 3.6 0 0 1 0 7.2Z"
+                                        />
+                                    </svg>
+                                    Steam
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener"
+                                    aria-label="Dotabuff"
+                                    >Dotabuff</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    target="_blank"
+                                    rel="noopener"
+                                    aria-label="Twitch"
+                                    >Twitch</a
+                                >
+                            </li>
+                        </ul>
+                    </aside>
+
+                    <!-- Правая колонка -->
+                    <div class="profile__main">
+                        <p class="profile__eyebrow">
+                            <span class="dot"></span> POSITION 2 · SOLO MID
+                        </p>
+                        <h1 class="profile__name">
+                            Егор <span class="accent">Михайлов</span>
+                        </h1>
+                        <p class="profile__nickname">
+                            aka <strong>«midking»</strong>
+                        </p>
+
+                        <p class="profile__bio">
+                            Мид-игрок со стажем. Специализируюсь на темповых
+                            героях, которые задают ритм игры с первых минут.
+                            Обожаю ранние ротации, руны и размены на линии. В
+                            команде отвечаю за темп и контроль рун.
+                        </p>
+
+                        <dl class="profile__meta">
+                            <div>
+                                <dt>Возраст</dt>
+                                <dd>22</dd>
+                            </div>
+                            <div>
+                                <dt>В команде</dt>
+                                <dd>с 2023</dd>
+                            </div>
+                            <div>
+                                <dt>Страна</dt>
+                                <dd>Россия</dd>
+                            </div>
+                            <div>
+                                <dt>Любимая роль</dt>
+                                <dd>Mid</dd>
+                            </div>
+                        </dl>
+
+                        <div class="profile__actions">
+                            <a href="../index.html" class="btn btn--ghost"
+                                >← Весь состав</a
+                            >
+                        </div>
+
+                        <p
+                            class="profile__fact"
+                            id="factOutput"
+                            role="status"
+                            aria-live="polite"
+                        >
+                            Нажми кнопку — узнаешь что-то обо мне.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== Статистика ===== -->
+            <section class="stats" aria-label="Статистика игрока">
+                <div class="stats__grid">
+                    <div class="stat">
+                        <span class="stat__label">Матчей</span>
+                        <span class="stat__value" data-counter="5140">0</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__label">Winrate</span>
+                        <span class="stat__value"
+                            ><span data-counter="59">0</span>%</span
+                        >
+                    </div>
+                    <div class="stat">
+                        <span class="stat__label">Avg KDA</span>
+                        <span class="stat__value">5.2</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat__label">GPM</span>
+                        <span class="stat__value" data-counter="598">0</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ===== Пул героев ===== -->
+            <section class="heroes" id="heroes">
+                <div class="section-head">
+                    <h2 class="section-title">Пул героев</h2>
+                    <p class="section-hint">Топ-5 по количеству игр</p>
+                </div>
+
+                <ul class="heroes__list" id="heroesList"></ul>
+            </section>
+
+            <!-- ===== Последние матчи ===== -->
+            <section class="matches" id="matches">
+                <div class="section-head">
+                    <h2 class="section-title">Последние матчи</h2>
+                    <p class="section-hint">Ranked · за последние 7 дней</p>
+                </div>
+
+                <div
+                    class="matches__table"
+                    role="table"
+                    aria-label="Последние матчи"
+                >
+                    <div class="matches__row matches__row--head" role="row">
+                        <span role="columnheader">Герой</span>
+                        <span role="columnheader">Результат</span>
+                        <span role="columnheader">K / D / A</span>
+                        <span role="columnheader">Длительность</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__text">
+                © <span id="footerYear">2026</span> TEAM FIVE · Dota 2 Roster
+            </p>
+        </footer>
+
+        <script src="../scripts/profile.js"></script>
+        <script src="../scripts/players/egor.js"></script>
+    </body>
+</html>
