@@ -3,30 +3,30 @@
    ========================================================= */
 
 window.PLAYER = {
-  nick: "midking",
-  position: 2,
-  role: "Mid · Solo Lane",
+  nick: "4DAREALONEZ",
+  position: 3,
+  role: "Offlane · Core",
 
   heroes: [
-    { name: "Invoker", role: "Mid", winrate: 64, games: 248, kda: "5.6" },
-    { name: "Puck", role: "Mid", winrate: 61, games: 192, kda: "5.1" },
+    { name: "Axe", role: "Offlane", winrate: 64, games: 248, kda: "5.6" },
+    { name: "Slardar", role: "Offlane", winrate: 61, games: 192, kda: "5.1" },
     {
-      name: "Ember Spirit",
-      role: "Mid",
+      name: "",
+      role: "Offlane",
       winrate: 58,
       games: 167,
       kda: "4.9",
     },
     {
       name: "Storm Spirit",
-      role: "Mid",
+      role: "Offlane",
       winrate: 57,
       games: 143,
       kda: "4.6",
     },
     {
       name: "Void Spirit",
-      role: "Mid",
+      role: "Offlane",
       winrate: 55,
       games: 118,
       kda: "4.3",
@@ -34,8 +34,8 @@ window.PLAYER = {
   ],
 
   matches: [
-    { hero: "Invoker", win: true, kda: "13 / 2 / 14", duration: "41:07" },
-    { hero: "Puck", win: true, kda: "9 / 4 / 18", duration: "36:52" },
+    { hero: "Axe", win: true, kda: "13 / 2 / 14", duration: "41:07" },
+    { hero: "Slardar", win: true, kda: "9 / 4 / 18", duration: "36:52" },
     {
       hero: "Ember Spirit",
       win: false,
