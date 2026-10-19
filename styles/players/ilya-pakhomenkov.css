@@ -1,0 +1,38 @@
+/* =========================================================
+   egor.css — персональные стили профиля Егора
+   Акцент: Radiant-зелёный — Mid, темповый стиль
+   ========================================================= */
+
+body {
+    --accent: #6ecf7a;
+    --accent-soft: rgba(110, 207, 122, 0.12);
+}
+
+/* Персональная деталь — двойная линия под именем, «два мида» */
+.profile__name::after {
+    content: '';
+    display: block;
+    width: 72px;
+    height: 3px;
+    margin-top: 0.85rem;
+    background: linear-gradient(
+        90deg,
+        var(--accent) 0 45%,
+        transparent 45% 55%,
+        var(--accent) 55% 100%
+    );
+    border-radius: 2px;
+}
+
+/* Позиция 2 (Mid) — плашка с зелёным свечением */
+.profile__pos {
+    background: linear-gradient(180deg, #8fe39a, #4fa85d);
+    color: #0b1410;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 14px -2px rgba(110, 207, 122, 0.7);
+}
+
+/* Mid-специфичный штрих: полоска winrate героев ярче */
+.hero-card__winrate {
+    text-shadow: 0 0 10px rgba(110, 207, 122, 0.35);
+}
