@@ -11,6 +11,7 @@
 
 **Пять игроков. Один трон. Один репозиторий.**
 
+[⚠️ **Репозиторий преподователя**](https://gitflic.ru/project/rurewa/mfua)
 [🌐 Открыть сайт](https://skapty6260.github.io/collab_test/) · [🐛 Сообщить об ошибке](https://github.com/skapty6260/collab_test/issues) · [📁 Структура](#-структура-проекта)
 
 </div>
